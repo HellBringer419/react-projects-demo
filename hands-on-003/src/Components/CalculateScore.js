@@ -1,3 +1,5 @@
+import '../Stylesheets/mystyle.css'
+
 const percentToDecimal = (decimal) => {
 	return decimal.toFixed(2) + "%";
 };
@@ -28,7 +30,7 @@ export const CalculateScore = ({ Name, School, total, goal }) => {
 				<b>
 					<span>Total:</span>
 				</b>
-				<span>{Total}</span>
+				<span>{total}</span>
 				<span>Marks</span>
 			</div>
 			<div className="Score">
