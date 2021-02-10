@@ -1,0 +1,5 @@
+.mydiv {
+    display: grid;
+    place-content: center;
+    color: green;
+}
