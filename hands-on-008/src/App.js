@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from './components/Counter';
+import CurrencyConvertor from './components/CurrencyConvertor';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const OnPress = () => {
+	window.alert("I was clicked");
+}
+
+const App = () => {
+	return (
+		<div>
+			<Counter />
+			<button value="welcome" onClick={(event) => window.alert(event.target.value)}>Say Welcome</button>
+			<br />
+			<button onClick={OnPress}>Click on me</button>
+			<CurrencyConvertor />
+		</div>
+	);
 }
 
 export default App;
