@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { Blog, books, blogs, courses } from "./components/Blog";
+import "./stylesheets/mystyle.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="container">
+			<Blog books={books} blogs={blogs} courses={courses} />
+		</div>
+	);
 }
 
 export default App;

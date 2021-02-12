@@ -1,0 +1,19 @@
+.container {
+    margin: 10%;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.v1 {
+    padding-right:10%;
+    border-right: 4px solid green;
+}
+
+.mystyle1 {
+    padding-right: 10%;
+    border-right: 4px solid green;
+}
