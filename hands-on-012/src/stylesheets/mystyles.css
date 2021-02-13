@@ -1,0 +1,14 @@
+.container {
+    margin: 10%;
+}
+
+.heading {
+    color: red;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2px;
+}
